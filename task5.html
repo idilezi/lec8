@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Float та Clear</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+    <h1>Float та Clear</h1>
+
+    <div class="floated-box">
+        <img src="https://www.shutterstock.com/shutterstock/photos/2198245029/display_1500/stock-photo-autumn-nature-landscape-lake-bridge-in-fall-forest-path-way-in-gold-woods-romantic-view-image-2198245029.jpg" width="150">
+        <p>Цей блок має <b>float: left</b>.</p>
+    </div>
+
+    <p>Цей текст обтікає "плаваючий" блок. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Він продовжує обтікати.</p>
+    <p>Текст продовжує обтікати. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Поки є місце, текст буде поруч.</p>
+    
+    <div class="cleared-box">
+        Цей блок використовує <b>clear: left</b>, тому він не обтікає попередній елемент, а "очищує" простір і стрибає під нього.
+    </div>
+    
+    <p>Цей текст з'явиться вже після "очищеного" блоку.</p>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Display та Box-Sizing</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <h2>Властивість 'display'</h2>
+    <p>Показуємо, як працює властивість <code>display</code> для контейнерів та їхніх дочірніх елементів.</p>
+
+    <div class="container">
+        <h3>display: block</h3>
+        <div class="item display-block">Блок 1</div>
+        <div class="item display-block">Блок 2</div>
+        <p>Кожен блок займає всю доступну ширину і починається з нового рядка.</p>
+    </div>
+    
+    <div class="container">
+        <h3>display: inline</h3>
+        <span class="item display-inline">Блок 1 (width/height не впливають)</span>
+        <span class="item display-inline">Блок 2</span>
+        <p>Інлайнові елементи розташовуються в одному рядку; їхні ширина та висота не завжди застосовуються.</p>
+    </div>
+
+    <div class="container display-flex">
+        <h3>display: flex</h3>
+        <div class="item">Блок 1</div>
+        <div class="item">Блок 2</div>
+        <p>Flex-контейнер легко вирівнює дочірні елементи по рядку або стовпцю, залежно від налаштувань.</p>
+    </div>
+
+    <h2>Властивість 'box-sizing'</h2>
+    <div class="box content-box">
+        <b>content-box (за замовчуванням):</b><br>
+        Width (200px) + Padding (20px × 2) + Border (5px × 2) = 
+        <b>Загальна ширина 250px</b>
+    </div>
+    <div class="box border-box">
+        <b>border-box:</b><br>
+        Width (200px) включає Padding і Border — 
+        <b>Загальна ширина 200px</b> (внутрішні відступи та рамка враховані).
+    </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Позиціонування</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 0;
+        }
+        .box {
+            padding: 15px;
+            border: 2px solid #333;
+            margin: 10px;
+        }
+
+        .static {
+            position: static;
+            background-color: #f0f0f0;
+        }
+
+        .relative-parent {
+            position: relative;
+            background-color: #e0e0e0;
+            height: 150px;
+        }
+        .absolute-child {
+            position: absolute;
+            top: 20px;  
+            right: 20px;
+            background-color: #fff3cd;
+            border-color: #856404;
+            width: 50%;
+        }
+
+        .fixed-box {
+            position: fixed;
+            bottom: 20px; 
+            left: 20px;   
+            background-color: #d4edda;
+            border: 2px solid #155724;
+            padding: 15px;
+            z-index: 100; 
+        }
+
+        .sticky-header {
+            position: sticky;
+            top: 0; 
+            background-color: #f8d7da;
+            border: 2px solid #721c24;
+            padding: 10px;
+            margin: 0;
+            z-index: 50;
+        }
+
+        .scroll-content {
+            height: 2000px; 
+            background: #fafafa;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="fixed-box">
+        Я <b>fixed</b>. Я прикріплений до вікна браузера.
+    </div>
+
+    <h2 class="sticky-header">
+        Я <b>sticky</b>. Я "прилипну" до верху, коли ви почнете прокручувати.
+    </h2>
+
+    <div class="scroll-content">
+        <h1>Прокрутіть сторінку, щоб побачити ефекти</h1>
+
+        <div class="box static">
+            Це <b>static</b>. Звичайний елемент у потоці.
+        </div>
+
+        <div class="box relative-parent">
+            Це батьківський блок (<b>position: relative</b>).
+            
+            <div class="box absolute-child">
+                А це <b>absolute</b>. Я позиціонуюсь відносно кутів мого 'relative' батька, а не сторінки.
+            </div>
+        </div>
+
+        <p>...просто багато тексту для прокрутки...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...Зверніть увагу, як 'fixed' елемент (зелений) завжди на місці...</p>
+        <p>...</p>
+        <p>...А 'sticky' елемент (червоний) "прилип" до верху екрана...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>(...прокручуйте далі...)</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>Кінець контенту.</p>
+    </div>
+
+</body>
+</html>

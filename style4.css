@@ -1,0 +1,35 @@
+body { font-family: sans-serif; padding: 20px; }
+h3 { margin-top: 0; }
+
+.container { 
+    border: 2px dashed #ccc; 
+    margin-bottom: 20px; 
+    padding: 10px; 
+}
+.item { 
+    background-color: #e0f7fa; 
+    border: 1px solid #00796b; 
+    padding: 10px; 
+    width: 150px;
+}
+
+.display-block { display: block; margin-bottom: 5px; }
+.display-inline { display: inline; width: auto; }
+.display-flex { display: flex; }
+
+.box {
+    width: 200px;
+    height: 100px;
+    padding: 20px; 
+    border: 5px solid #c2185b;
+    margin: 15px;
+    background-color: #fce4ec;
+}
+
+.content-box {
+    box-sizing: content-box; 
+}
+
+.border-box {
+    box-sizing: border-box; 
+}
